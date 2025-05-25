@@ -6,6 +6,6 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: AppText.cofosansTitleLarge("Profile screen"));
+    return Center(child: AppText.cofosansTitleLarge('Profile screen'));
   }
 }

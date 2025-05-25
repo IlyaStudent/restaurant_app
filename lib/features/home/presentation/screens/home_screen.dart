@@ -6,6 +6,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: AppText.cofosansTitleLarge("Home screen"));
+    return Center(child: AppText.cofosansTitleLarge('Home screen'));
   }
 }

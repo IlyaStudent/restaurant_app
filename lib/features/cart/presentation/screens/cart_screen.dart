@@ -6,6 +6,6 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: AppText.cofosansTitleLarge("Cart screen"));
+    return Center(child: AppText.cofosansTitleLarge('Cart screen'));
   }
 }
