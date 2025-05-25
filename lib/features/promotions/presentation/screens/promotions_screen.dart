@@ -6,6 +6,6 @@ class PromotionsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: AppText.cofosansTitleLarge("Promotions screen"));
+    return const Center(child: const AppText.cofosansTitleLarge('Promotions screen'));
   }
 }
