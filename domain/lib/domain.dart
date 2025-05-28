@@ -1,10 +1,10 @@
 library;
 
-// Entitites
+/// Entitites
 export 'src/entities/entities.dart';
 
-// Repositories
+/// Repositories
 export 'src/repositories/repositories.dart';
 
-// UseCases
+/// Use Cases
 export 'src/use_cases/use_cases.dart';

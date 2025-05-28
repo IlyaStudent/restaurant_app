@@ -1,4 +1,4 @@
 library;
 
 // categories
-part 'categories/category_entity.dart';
+part 'meal_categories/meal_category_entity.dart';

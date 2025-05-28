@@ -3,4 +3,4 @@ library;
 import 'package:domain/src/entities/entities.dart';
 
 // categories
-part 'categories/categories_repository.dart';
+part 'meal_categories/meal_categories_repository.dart';
