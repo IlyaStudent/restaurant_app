@@ -6,5 +6,10 @@ abstract class MealCategoryEntity {
   final String imageUrl;
   final String description;
 
-  const MealCategoryEntity({required this.id, required this.name, required this.imageUrl, required this.description});
+  const MealCategoryEntity({
+    required this.id,
+    required this.name,
+    required this.imageUrl,
+    required this.description,
+  });
 }
