@@ -9,5 +9,5 @@ abstract class MealCategoriesDataSource {
   }) = _MealCategoriesDataSource;
 
   @GET(Endpoints.mealCategories)
-  Future<List<MealCategoryDTO>> getAllCategories();
+  Future<MealCategoriesListDTO> getAllCategories();
 }

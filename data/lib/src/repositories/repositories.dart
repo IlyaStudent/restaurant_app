@@ -4,4 +4,4 @@ import 'package:data/data.dart';
 import 'package:domain/domain.dart';
 
 // categories
-part 'categories/categories_repository_impl.dart';
+part 'meal_categories/meal_categories_repository_impl.dart';

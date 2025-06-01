@@ -1,13 +1,13 @@
 part of '../repositories.dart';
 
-class CategoriesRepositoryImpl implements MealCategoriesRepository {
+class MealCategoriesRepositoryImpl implements MealCategoriesRepository {
   final MealCategoriesDataSource _categoriesDataSource;
 
-  CategoriesRepositoryImpl({
+  MealCategoriesRepositoryImpl({
     required MealCategoriesDataSource categoriesDataSource,
   }) : _categoriesDataSource = categoriesDataSource;
 
   @override
-  Future<List<MealCategoryEntity>> getAllMealCategories() =>
+  Future<MealCategoriesListEntity> getAllMealCategories() =>
       _categoriesDataSource.getAllCategories();
 }
