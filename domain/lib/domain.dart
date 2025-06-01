@@ -1,8 +1,10 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
 library;
 
-export 'src/domain_base.dart';
+/// Entitites
+export 'src/entities/entities.dart';
 
-// TODO: Export any libraries intended for clients of this package.
+/// Repositories
+export 'src/repositories/repositories.dart';
+
+/// Use Cases
+export 'src/use_cases/use_cases.dart';

@@ -12,6 +12,11 @@
 # The core lints are also what is used by pub.dev for scoring packages.
 
 include: package:lints/recommended.yaml
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+    overridden_fields: ignore
+    use_super_parameters: ignore
 
 # Uncomment the following section to specify additional rules.
 

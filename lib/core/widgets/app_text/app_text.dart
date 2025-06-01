@@ -1,6 +1,4 @@
-import 'package:flutter/widgets.dart';
-import 'package:restaurant_app/core/styles/text_styles.dart';
-part 'app_text_factory.dart';
+part of '../widgets.dart';
 
 class AppText extends StatefulWidget {
   final String text;
@@ -314,7 +312,9 @@ class _AppTextState extends State<AppText> {
     uppercase = widget.uppercase;
     decoration = widget.decoration;
     decorationColor =
-        widget.decoration != null && widget.decorationColor == null ? widget.color : widget.decorationColor;
+        widget.decoration != null && widget.decorationColor == null
+            ? widget.color
+            : widget.decorationColor;
     color = widget.color;
     softWrap = widget.softWrap;
     shadows = widget.shadows;
@@ -324,7 +324,12 @@ class _AppTextState extends State<AppText> {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: style.copyWith(decoration: decoration, decorationColor: decorationColor, color: color, shadows: shadows),
+      style: style.copyWith(
+        decoration: decoration,
+        decorationColor: decorationColor,
+        color: color,
+        shadows: shadows,
+      ),
       textAlign: textAlign,
       overflow: overflow,
       maxLines: maxLines,
