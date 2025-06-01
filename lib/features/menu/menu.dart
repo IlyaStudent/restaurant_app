@@ -4,6 +4,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:domain/domain.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/core/di/dependencies.dart';
+import 'package:restaurant_app/core/extensions/extensions.dart';
 import 'package:restaurant_app/core/routes/app_router.gr.dart';
 import 'package:restaurant_app/core/styles/app_colors.dart';
 import 'package:restaurant_app/core/utils/api_response_state/api_response_state.dart';

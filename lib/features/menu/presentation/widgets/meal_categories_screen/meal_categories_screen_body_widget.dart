@@ -6,16 +6,50 @@ class MealCategoriesScreenBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 24),
-      child: Column(
-        spacing: 16,
-        crossAxisAlignment: CrossAxisAlignment.start,
+    final categories = data.categories;
+    return DecoratedBox(
+      decoration: BoxDecoration(color: AppColors.accentColor),
+      child: Stack(
         children: [
-          AppText.cofosansDisplayMedium("Категории"),
-          Divider(color: AppColors.accentColor, thickness: 1),
-          ...data.categories.map(
-            (mealCategory) => MealCategoryWidget(mealCategory: mealCategory),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 24),
+            child: AppText.cofosansHeadlineMedium(
+              context.localization.categories,
+              color: AppColors.additionalColor,
+            ),
+          ),
+          DraggableScrollableSheet(
+            initialChildSize: 0.9,
+            minChildSize: 0.9,
+            maxChildSize: 1,
+            builder: (context, scrollController) {
+              return Container(
+                decoration: BoxDecoration(
+                  color: AppColors.white,
+                  borderRadius: const BorderRadius.vertical(
+                    top: Radius.circular(16),
+                  ),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 16),
+                  child: CustomScrollView(
+                    clipBehavior: Clip.none,
+                    controller: scrollController,
+                    physics: BouncingScrollPhysics(),
+                    slivers: [
+                      SliverList.separated(
+                        itemCount: categories.length,
+                        itemBuilder:
+                            (_, index) => MealCategoryWidget(
+                              mealCategory: categories[index],
+                            ),
+                        separatorBuilder: (_, __) => SizedBox(height: 16),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),
