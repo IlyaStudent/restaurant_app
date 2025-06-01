@@ -7,7 +7,7 @@ class GetAllMealCategoriesUseCase {
     required MealCategoriesRepository categoriesRepository,
   }) : _categoriesRepository = categoriesRepository;
 
-  Future<List<MealCategoryEntity>> call() async {
+  Future<MealCategoriesListEntity> call() async {
     return await _categoriesRepository.getAllMealCategories();
   }
 }

@@ -1,7 +1,7 @@
 part of '../entities.dart';
 
-abstract class MealCategoryEntity {
-  final int id;
+class MealCategoryEntity {
+  final String id;
   final String name;
   final String imageUrl;
   final String description;
