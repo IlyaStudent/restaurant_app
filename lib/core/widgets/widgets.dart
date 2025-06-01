@@ -21,3 +21,6 @@ part 'custom_error_widget.dart';
 
 // CustomLoadingIndicatorWidget
 part 'custom_loading_indicator_widget.dart';
+
+// HeaderDelegate
+part 'header_delegate.dart';

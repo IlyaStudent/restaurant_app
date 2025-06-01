@@ -78,6 +78,11 @@ class S {
   String get profile {
     return Intl.message('Профиль', name: 'profile', desc: '', args: []);
   }
+
+  /// `Категории`
+  String get categories {
+    return Intl.message('Категории', name: 'categories', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
