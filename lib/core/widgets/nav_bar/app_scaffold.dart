@@ -6,8 +6,18 @@ class AppScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => AutoTabsScaffold(
-    routes: const [MenuRoute(), PromotionsRoute(), HomeRoute(), CartRoute(), ProfileRoute()],
+    routes: const [
+      MenuWrapperRoute(),
+      PromotionsWrapperRoute(),
+      HomeWrapperRoute(),
+      CartWrapperRoute(),
+      ProfileWrapperRoute(),
+    ],
+
     bottomNavigationBuilder:
-        (_, tabsRouter) => AppNavBar(currentIndex: tabsRouter.activeIndex, onTap: tabsRouter.setActiveIndex),
+        (_, tabsRouter) => AppNavBar(
+          currentIndex: tabsRouter.activeIndex,
+          onTap: tabsRouter.setActiveIndex,
+        ),
   );
 }

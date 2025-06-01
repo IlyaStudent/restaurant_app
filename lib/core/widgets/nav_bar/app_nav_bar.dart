@@ -7,11 +7,12 @@ class AppNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => BottomNavigationBar(
+    type: BottomNavigationBarType.fixed,
     currentIndex: currentIndex,
     onTap: onTap,
-    // backgroundColor: Colors.orange,
-    // selectedItemColor: Colors.greenAccent,
-    // unselectedItemColor: Colors.grey,
+    backgroundColor: AppColors.white,
+    selectedItemColor: AppColors.primaryColor,
+    unselectedItemColor: AppColors.additionalColor,
     items: [
       BottomNavigationBarItem(
         label: context.localization.menu,

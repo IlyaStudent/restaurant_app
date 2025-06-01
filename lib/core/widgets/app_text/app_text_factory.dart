@@ -1,4 +1,4 @@
-part of 'app_text.dart';
+part of '../widgets.dart';
 
 final class _AppText$Custom extends AppText {
   const _AppText$Custom(

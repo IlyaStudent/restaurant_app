@@ -10,6 +10,7 @@ class RestaurantApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp.router(
     routerConfig: context.appRouter.config(),
+    debugShowCheckedModeBanner: false,
     localizationsDelegates: const [
       S.delegate,
       GlobalMaterialLocalizations.delegate,
@@ -18,8 +19,8 @@ class RestaurantApp extends StatelessWidget {
     ],
     supportedLocales: S.delegate.supportedLocales,
     theme: ThemeData(
-      primarySwatch: AppColors.primaryMaterial,
-      colorScheme: ColorScheme.fromSwatch(primarySwatch: AppColors.primaryMaterial, accentColor: AppColors.tomatoRed),
+      useMaterial3: false,
+      scaffoldBackgroundColor: AppColors.white,
     ),
   );
 }

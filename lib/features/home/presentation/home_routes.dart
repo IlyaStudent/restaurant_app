@@ -3,7 +3,9 @@ part of '../home.dart';
 abstract class HomeRoutes {
   HomeRoutes._();
 
-  static final routes = <AutoRoute>[AutoRoute(page: HomeRoute.page, path: HomePathes.home)];
+  static final routes = <AutoRoute>[
+    AutoRoute(page: HomeRoute.page, path: HomePathes.home, initial: true),
+  ];
 }
 
 abstract class HomePathes {
